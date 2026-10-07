@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f5f5f5;
+    --text-color: #1f2933;
+    --white-color: #fff;
+    --border-color: #ddd;
+
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 32px;
+
+    --text-small: 14px;
+    --text-medium: 16px;
+    --text-large: 24px;
+    --text-xlarge: 32px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--text-medium);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--text-xlarge);
+}
+
+h2 {
+    font-size: var(--text-large);
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: var(--spacing-medium);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: var(--spacing-medium);
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: var(--spacing-small)
+}
+
+nav a :hover {
+    background-color: var(--secondary-color);
+}
+
+nav a :focus {
+    outline: 2px solid var(--white-color);
+}
+
+header {
+    background-color: var(--white-color);
+    padding: var(--spacing-large);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-large);
+}
+
+section {
+    margin-bottom: var(--spacing-xlarge);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--spacing-large);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+}
+
+caption {
+    font-size: var(--text-large);
+    font-weight: bold;
+    margin-bottom: var(--spacing-medium);
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-medium);
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.card {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-large);
+    margin-bottom: var(--spacing-medium);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+.button:focus {
+    outline: 2px solid var(--white-color);
+    outline-offset: 2px;
+}
+
+form {
+    background-color: var(--white-color);
+    padding: var(--spacing-large);
+    border: 1px solid var(--border-color);
+}
+
+form div {
+    margin-bottom: var(--spacing-medium);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-small);
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: var(--spacing-small);
+    border: 1px solid var(--border-color);
+    font-size: var(--text-medium);
+}
+
+textarea {
+    min-height: 120px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+button[type="submit"]:focus {
+    outline: 2px solid var(--white-color);
+    outline-offset: 2px;
+}
+
+
